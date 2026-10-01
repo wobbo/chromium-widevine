@@ -11,6 +11,12 @@ Supported architectures:
 
 Google Chrome itself is **not installed**.
 
+```text
+wget -O install-widevine.sh https://wobbo.org/2026-10-01/install-widevine.sh
+chmod +x install-widevine.sh
+./install-widevine.sh
+```
+
 ## Tested
 
 Tested on:
