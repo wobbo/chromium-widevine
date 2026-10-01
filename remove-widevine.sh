@@ -1,20 +1,23 @@
 #!/bin/bash
 #
-# Chromium Widevine Remover for Debian AMD64
+# Chromium Widevine Remover for Debian/Ubuntu
 #
 # Removes the Widevine CDM directory installed by install-widevine.sh.
 # Chromium itself and the Chromium user profile are not removed.
 #
-# 2026-09-30 v1.0
+# Supports AMD64 and ARM64 installations.
+#
+# 2026-10-01 v1.1
 # Ernst Lanser <ernst.lanser@wobbo.org>
 # https://github.com/wobbo/
+#
 
 set -euo pipefail
 
 CHROMIUM_DIR="/usr/lib/chromium"
 WIDEVINE_DIR="$CHROMIUM_DIR/WidevineCdm"
 
-echo "Chromium Widevine Remover"
+echo "Chromium Widevine Remover v1.1"
 echo
 
 if [ ! -e "$WIDEVINE_DIR" ]; then
